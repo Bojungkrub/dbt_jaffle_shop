@@ -10,11 +10,25 @@
 pip install dbt-sqlite
 ```
 
-## ER Diagram
-![structure](./images/jaffle_shop_erd.png)
+## เริ่มสร้าง Project
+```bash
+dbt init jaffle_shop
+```
+dbt จะสร้าง Folder ที่จำเป็นมาให้เลย
+```bash
+├── jaffle_shop
+│   ├── analyses
+│   ├── macros
+│   ├── models
+│   ├── seeds
+│   ├── snapshots
+│   ├── tests
+|   ├── dbt_project.yml
+|   ├── README.md
+```
 
 ## ตั้งค่า Config your profiles
-config file `.dbt/profiles.yml`
+config file `Users/your_name/.dbt/profiles.yml`
 ```yml
 jaffle_shop:
   outputs:
@@ -38,3 +52,6 @@ dbt debug
 ![structure](./images/connect.jpg)
 
 เริ่มใช้ dbt ได้เลย
+
+## ER Diagram
+![structure](./images/jaffle_shop_erd.png)
